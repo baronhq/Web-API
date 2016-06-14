@@ -29,7 +29,7 @@ function ViewModel() {
         $(".modal").modal('hide');
         if (self.contact().Id) {
             $.ajax({
-                url: "http://localhost/webhost/api/contacts/" + self.contact.Id,
+                url: "http://localhost/webhost/api/contacts/" + self.contact().Id,
                 type: "PUT",
                 data: self.contact(),
                 success: function () {
